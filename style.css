@@ -1,0 +1,316 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+body {
+    background:#f2f2f2;
+    display: block;
+    padding: 0.385em;
+    font-size: 13px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+hr
+{
+    /*background-image:url("../img/hr3.png");
+    background-repeat: no-repeat;*/
+    /*position: relative;
+    border-bottom: solid 0.154em #e5e5e5;
+    box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+    border: 0;
+    display: block;
+    width: 75%;
+    height: 0;
+    text-align:right;
+    margin-right:0;
+    padding: 1.923em;*/
+    border: 0;
+    border-top: solid 0.154em #ddd;
+}
+::-webkit-scrollbar             {width:         12px;background-color: #ebebeb;}
+::-webkit-scrollbar-track       {border-radius: 0px;}
+::-webkit-scrollbar-thumb       {border-radius: 0px;background-color: #bebebe;}
+::-webkit-scrollbar-thumb:hover {border-radius: 0px; background-color: #7C7972;}
+img {
+    max-width: 100%;
+}
+input, textarea {
+  max-width: 100%;
+}
+select.sort {
+    border: 0 !important;  
+    -webkit-appearance: none;  
+    -moz-appearance: none; 
+    background: #0088cc url(../img/select-arrow.png) no-repeat 95% center;
+    font-size: 1.308em;
+    width: 360px; 
+    text-indent: 0.01px; 
+    text-overflow: ""; 
+
+    color: #000;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+}
+button.sort {
+    border: 0 !important;  
+    font-size: 1em;
+    text-indent: 0.01px; 
+    margin-top: 10px;
+
+    color: #000;
+    background-color: #ebebeb;
+    border-radius: 2px;
+    box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+}
+img.noload {
+    background: url("../img/loading.gif") 50% no-repeat !important;
+    position: relative;
+    overflow: hidden;
+    width: 2.462em;
+    height: 2.462em;
+    padding: 2.462em 2.462em 0 0;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    border: none !important;
+}
+#mp p {
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+#mp {
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.project {
+    border: 0.077em solid black;
+    border-radius: 0.385em;
+    padding: 0.385em;
+}
+.project img {
+    border: 0.077em solid black;
+    border-radius: 0.385em;
+    display: block;
+    margin: 0 auto;
+}
+img.project90 {
+    border: none;
+    display: block;
+    width: 55%;
+    height: 170%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 0px;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+img.project180 {
+    border: none;
+    display: block;
+    width: 55%;
+    height: 170%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 0px;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+img.project270 {
+    border: none;
+    display: block;
+    width: 55%;
+    height: 170%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 0px;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.projImg {
+    border: 0.077em solid black;
+    border-radius: 0.385em;
+    display: block;
+    margin: 0 auto;
+}
+#cf {
+    font-family: inherit;
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.contact {
+    font-family: inherit;
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.title {
+    font-size: 10em;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+@media screen and (max-width: 500px) {
+/* applies only if the screen is narrower than 500px */
+  .title {
+    font-size: 7.5em;
+  }
+}
+.loader {
+    border: 1.231em solid #f3f3f3; /* Light grey */
+    border-top: 1.231em solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 9.231em;
+    height: 9.231em;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.main p, .main li, .main ul, .main pre, .main s, .main del, .main span {
+    font-size: 1.308em;
+    color: black;
+    font-weight: 200;
+}
+@media screen and (max-width: 500px) {
+/* applies only if the screen is narrower than 500px */
+  .main p, .main li, .main ul{
+    font-size: 1em;
+  }
+}
+.main {
+    padding-left: 15.385em !important;
+    padding-right: 15.385em !important;
+}
+@media screen and (max-width: 500px) {
+/* applies only if the screen is narrower than 500px */
+  .main {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+}
+.title2 {
+    font-size: 2.692em;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: #595959; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.important {
+    font-size: 6.154em;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: #ff4d4d; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.portraitwarn {
+    font-size: 1.538em;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: #ff4d4d; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.center {
+    text-align: center;
+}
+.intro {
+    text-align:center;
+    font-size: 1.692em;
+}
+div.img { 
+    height: 7.692em;
+    text-align:center; 
+}
+
+div.img img { 
+    vertical-align:middle;
+}
+.main {
+    display: none;
+    line-height: 1.538em;
+}
+.gradient {
+    
+}
+.menu {
+    z-index: 1000;
+    text-align:center;
+    position: fixed;
+    list-style-type: none;
+    margin: auto;
+    width: 98%;
+    padding: 0;
+    overflow: hidden;
+    font-weight: 200;
+    /*font-family: 'Source Sans Pro';*/
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebcbf+0,0a0e0a+0,bebebe+0,ebebeb+50,bebebe+100 */
+background: #aebcbf; /* Old browsers */
+background: -moz-linear-gradient(left, #aebcbf 0%, #0a0e0a 0%, #bebebe 0%, #ebebeb 50%, #bebebe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #aebcbf 0%,#0a0e0a 0%,#bebebe 0%,#ebebeb 50%,#bebebe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #aebcbf 0%,#0a0e0a 0%,#bebebe 0%,#ebebeb 50%,#bebebe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#bebebe',GradientType=1 ); /* IE6-9 */
+
+
+    /*background: #d9d9d9;*/
+/*    background: -webkit-linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* For Safari 5.1 to 6.0 */
+/*    background: -o-linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* For Opera 11.1 to 12.0 */
+/*    background: -moz-linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* For Firefox 3.6 to 15 */
+/*    background: linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* Standard syntax */
+}
+@media screen and (max-width: 500px) {
+/* applies only if the screen is narrower than 500px */
+  .menu {
+    position: static;
+  }
+}
+.menuitem {
+    display: inline-block;
+    transition: 0.4s;
+}
+.menuitemnoanim {
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-size: 32px;
+    vertical-align: middle;
+    line-height: normal;
+    transform: scale(0.5, 1.15);
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+.menulink {
+    font-size: 1.538em;
+    color: #4d4d4d;
+    padding: 1.077em 1.231em;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    display:inline-block;
+}
+.menuitem:hover {
+    background: #666666;
+}
+.menulink:hover {
+    color: #cccccc;
+}

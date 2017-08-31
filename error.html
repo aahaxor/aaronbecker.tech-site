@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aaron's Site</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/helpLib.js"></script>
+    </head>
+    <body>
+        <center>
+            <h2 class="important">I'm sorry, there has been an error loading an important script.</h2>
+            <p class="intro">Try <a href="#" onclick="window.location.href = 'index.php';">reloading</a> the page, or clear the cookies and your browser's cache.</p><ins id="error">(Error(s): Loading...)</ins>
+        </center>
+    </body>
+    <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    setTimeout(function(){
+        var e = getParameterByName("e");
+        if (e == null || e == undefined || e == "") {
+            window.location.href = "index.php";
+        }
+        document.getElementById("error").innerHTML = "(Error: "+getParameterByName("e")+")";
+    },1);
+    </script>
+</html>

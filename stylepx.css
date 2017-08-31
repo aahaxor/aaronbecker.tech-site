@@ -1,0 +1,206 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+body {
+    background:#f2f2f2;
+    display: block;
+    padding: 5px;
+    font-size: 13px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+hr
+{
+    /*background-image:url("../img/hr3.png");
+    background-repeat: no-repeat;*/
+    /*position: relative;
+    border-bottom: solid 2px #e5e5e5;
+    box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+    border: 0;
+    display: block;
+    width: 75%;
+    height: 0;
+    text-align:right;
+    margin-right:0;
+    padding: 25px;*/
+    border: 0;
+    border-top: solid 2px #ddd;
+}
+img.noload {
+    background: url("../img/loading.gif") 50% no-repeat !important;
+    position: relative;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    padding: 32px 32px 0 0;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    border: none !important;
+}
+#mp p {
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+#mp {
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.project {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.project img {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.projImg {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+#cf {
+    font-family: inherit;
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.contact {
+    font-family: inherit;
+    font-weight: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.title {
+    font-size: 130px;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.main p {
+    font-size: 17px;
+    color: black;
+    font-weight: 200;
+}
+.main {
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+}
+.title2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: #595959; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.important {
+    font-size: 80px;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: #ff4d4d; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.portraitwarn {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+   -webkit-text-fill-color: #ff4d4d; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-weight: 400;
+}
+.center {
+    text-align: center;
+}
+.intro {
+    text-align:center;
+    font-size: 22px;
+}
+div.img { 
+    height: 100px;
+    text-align:center; 
+}
+
+div.img img { 
+    vertical-align:middle;
+}
+.main {
+    display: none;
+    line-height: 20px;
+}
+.gradient {
+    
+}
+.menu {
+    z-index: 1000;
+    text-align:center;
+    position: fixed;
+    list-style-type: none;
+    margin: auto;
+    width: 98%;
+    padding: 0;
+    overflow: hidden;
+    font-weight: 200;
+    /*font-family: 'Source Sans Pro';*/
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebcbf+0,0a0e0a+0,bebebe+0,ebebeb+50,bebebe+100 */
+background: #aebcbf; /* Old browsers */
+background: -moz-linear-gradient(left, #aebcbf 0%, #0a0e0a 0%, #bebebe 0%, #ebebeb 50%, #bebebe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #aebcbf 0%,#0a0e0a 0%,#bebebe 0%,#ebebeb 50%,#bebebe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #aebcbf 0%,#0a0e0a 0%,#bebebe 0%,#ebebeb 50%,#bebebe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#bebebe',GradientType=1 ); /* IE6-9 */
+
+
+    /*background: #d9d9d9;*/
+/*    background: -webkit-linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* For Safari 5.1 to 6.0 */
+/*    background: -o-linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* For Opera 11.1 to 12.0 */
+/*    background: -moz-linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* For Firefox 3.6 to 15 */
+/*    background: linear-gradient(#f2f2f2, #a6a6a6, #f2f2f2);*/ /* Standard syntax */
+}
+.menuitem {
+    display: inline-block;
+    transition: 0.4s;
+}
+.menuitemnoanim {
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+}
+.menulink {
+    font-size: 20px;
+    color: #4d4d4d;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    display:inline-block;
+}
+.menuitem:hover {
+    background: #666666;
+}
+.menulink:hover {
+    color: #cccccc;
+}
