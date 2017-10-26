@@ -194,33 +194,33 @@
         "Platformed": {
             "title":"Platformed (Continuation of ASCII Physics Engine)",
             "description":"As soon as I had an engine written in JavaScript capable of rendering ASCII, my friend who was with me on the trip suggested that I make a proper video game with it. At the time, I didn't have time to make a full video game with it, but several months later I decided to start. Making a game was an interesting exercise, since I had to figure out some new concepts, including making a lightweight audio engine, as well as optimization. Optimizing my code was especially difficult, since I had to think about the ways that I could make a process shorter, or subtract some superfluous code.",
-            "image1":"http://projects.aaronbecker.tech/code/platformedv4/image1.png",
+            "image1":"https://projects.aaronbecker.tech/code/platformedv4/image1.png",
             "date": "6/15/2017",
             "complexity": "75",
             "completed": "90%",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/code/platformedv4"
+            "page": "https://projects.aaronbecker.tech/code/platformedv4"
         },
         "MarshmallowCannon": {
             "title":"Marshmallow Cannon",
             "description": "An air-powered cannon made of PVC that shoots marshmallows. I made this in the spring of 2017 after the Maker Faire in San Francisco, where I originally made a smaller, human powered marshmallow cannon. After doing this project, I learned several new things, including how to use and work with PVC pipe, how to use compressed air as an effective propulsion method, and finally how to use a solenoid valve effectively to control air.",
-            "image1": "http://projects.aaronbecker.tech/projects/marshmallowcannon/image2.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/marshmallowcannon/image2.jpg",
             "date": "5/18/2017",
             "complexity": "60",
             "completed": "98%",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/marshmallowcannon"
+            "page": "https://projects.aaronbecker.tech/projects/marshmallowcannon"
 
         },
         "ASCIIPhysics": {
             "title":"ASCII Physics Engine Project",
             "description":"On a long road trip with my computer, I got an idea. I thought that it would be cool to make a graphics engine capable of rendering 2d shapes, physics, and art with only ASCII characters. I started with the rendering, and continued to make the engine. I ended up making this small demo to demonstrate the rendering and collision possibilities. While I was working on this project, I learned a lot about several new programming techniques, including a render buffer, 2d collision, and a render loop.",
-            "image1":"http://projects.aaronbecker.tech/code/physics/image1.png",
+            "image1":"https://projects.aaronbecker.tech/code/physics/image1.png",
             "date": "3/10/2017",
             "complexity": "65",
             "completed": "90%",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/code/physics"
+            "page": "https://projects.aaronbecker.tech/code/physics"
         },
         "ArduRov": {
             "fill": "fyuse",
@@ -233,7 +233,7 @@
             "complexity": "80",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/car"
+            "page": "https://projects.aaronbecker.tech/projects/car"
         },
         "ArduRemote": {
             "fill": "fyuse",
@@ -246,77 +246,77 @@
             "complexity": "50",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/car-remote"
+            "page": "https://projects.aaronbecker.tech/projects/car-remote"
         },
         "BikeComputer": {
             "title": "Bike Computer",
             "description": "During the winter of my 8th grade year, I had a small, but nagging, problem. Every day, my sister and I would bike to school. While we were biking, however, we had no idea how far we were biking, or how fast, which made it difficult to calculate the most efficient route to school. I spent several weeks working on this project, starting with the PCB (Printed Circuit Board) inside. This was the first major project of mine that required its own circuit board, and I had to design one from scratch. I also had to work on the casing for the bike computer, and the casing for the screen as well, which had to be 3d modeled and then printed on a 3d printer. I also had to write the code that actually calculated how fast, in MPH, you were going from the interval per rotation of the wheel (calculated from a magnetic sensor on the wheel). I learned a lot of skills from this project, including 3d modeling skills that were required to build the case, and programming skills which I used to figure out how fast the wheel was going.",
-            "image1": "http://projects.aaronbecker.tech/projects/bikecomputer/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/bikecomputer/image1.jpg",
             "date": "1/24/2017",
             "complexity": "95",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/bikecomputer"
+            "page": "https://projects.aaronbecker.tech/projects/bikecomputer"
         },
         "LunchBoxComputer": {
             "title": "Lunch Box Computer",
             "description": "A complete computer contained inside a lunch box! During the winter of 2016, I was experimenting with Raspberry Pi (silly name, right?) SBCs, or Single Board Computers. I bought a screen off eBay, a battery, a mini keyboard, and of course, a lunchbox, and I got to work assembling this small portable computer! I learned so much from this project, from using my soldering skills to replace the battery controller (it didn't supply enough voltage) to having to use my Python knowledge to program the WiFi antenna.",
-            "image1": "http://projects.aaronbecker.tech/projects/lunchboxcomputer/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/lunchboxcomputer/image1.jpg",
             "date": "11/23/2016",
             "complexity": "60",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/lunchboxcomputer"
+            "page": "https://projects.aaronbecker.tech/projects/lunchboxcomputer"
         },
         "PaperGun": {
             "title": "Paper Gun",
             "description": "The paper gun was made during the fall of 7th grade. I started with an idea, and the handle. From there, I worked up to the whole gun. I learned a lot about different ways to use paper while I was building this, since it is constructed entirely from paper, as well as the weaknesses (and strengths) of using paper as the primary construction material. There were also several challenges to designing this, such as reinforcement of certain parts, which required creativity to solve (and usually a certain amount of hot glue!)",
-            "image1": "http://projects.aaronbecker.tech/projects/papergun/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/papergun/image1.jpg",
             "date": "10/20/2016",
             "complexity": "60",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/papergun"
+            "page": "https://projects.aaronbecker.tech/projects/papergun"
         },
         "CrackedApple2": {
             "title": "Cracked Apple MkII",
             "description": "The Cracked Apple MkII is the second custom-built PC that I have made, using my knowledge from the Cracked Apple MkI. I finished this during the spring of 2016. While making this, I went through several challenges with watercooling that I had to rectify. One challenge I faced was the fan speed of the watercooling fan. The default configuration just had the fans running at 100% all the time. I had to set up a custom cooling profile, which was a unique challenge. While I was making this project, I also learned the value of patience and especially research, since I also had to make sure that all components worked with each other.",
-            "image1": "http://projects.aaronbecker.tech/projects/crackedapplemk2/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/crackedapplemk2/image1.jpg",
             "date": "9/27/2016",
             "complexity": "75",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/crackedapplemk2"
+            "page": "https://projects.aaronbecker.tech/projects/crackedapplemk2"
         },
         "TrackingBot": {
             "title": "Tracking Robot",
             "description": "During my 7th grade summer, I was at a summer camp for some basic Arduino (a microprocessor) robotics. We got a robot kit, an arduino, and a computer to work with. The challenge was simple: make a robot that could push other people's robots off the table. Over the course of 1 week, I worked on a program that accomplished this task. As I worked on this project, one skill that I developed was my programming knowledge. For example, the code that I worked on, including such concepts as a main loop, using sensors with arduino, and using servos, helped my knowledge to grow for other, more complex projects such as the bike computer.",
-            "image1": "http://projects.aaronbecker.tech/projects/trackingbot/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/trackingbot/image1.jpg",
             "date": "8/05/2016",
             "complexity": "50",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/trackingbot"
+            "page": "https://projects.aaronbecker.tech/projects/trackingbot"
         },
         "MiniMarbleLauncher": {
             "title": "Mini Marble Launcher",
             "description": "A few weeks after I made the Marble Launcher, I decided that I could make it slightly smaller and more compact. I decided to go with the same trigger mechanism, since it was quite effective, but I reduced the length. I learned a lot about rubber bands when I was making this project, since when I was making it, I had to find a design that stretched the rubber band(s) to the maximum possible amount without breaking them, so as to provide the maximal amount of forward velocity when activated.",
-            "image1": "http://projects.aaronbecker.tech/projects/minimarblelauncher/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/minimarblelauncher/image1.jpg",
             "date": "7/26/2016",
             "complexity": "35",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/minimarblelauncher"
+            "page": "https://projects.aaronbecker.tech/projects/minimarblelauncher"
         },
         "ArduinoTower": {
             "title": "Arduino Tower",
             "description": "After a week during the summer of 2016 at Stanford Technology Camp, making the Arduin-O-Rover, there were a lot of Arduino Nano clones that had either been short-circuited, melted, or a combination of both. I took these broken microprocessors home and decided to make some cool art with them. Using hot glue, I glued them together along with some broken motherboards from the robot kits to make this tower. While making this project, I learned about effective ways to recycle materials and the amazing properties of hot glue as a binder for materials.",
-            "image1": "http://projects.aaronbecker.tech/projects/arduinotower/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/arduinotower/image1.jpg",
             "date": "7/20/2016",
             "complexity": "25",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/arduinotower"
+            "page": "https://projects.aaronbecker.tech/projects/arduinotower"
         },
         "PopsicleChair": {
             "fill": "fyuse",
@@ -329,47 +329,47 @@
             "complexity": "65",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/chair"
+            "page": "https://projects.aaronbecker.tech/projects/chair"
         },
         "MiniCatapult": {
             "title": "Miniature Catapult",
             "description": "During the summer of 7th grade, I was going through my old school things when I found my old zenith catapult from 5th grade. After dusting it off and fixing the arm, I thought that it would be cool to try to make a version that was smaller, but still was powerful. While making this, there were still a few challenges, including surprisingly the strength of the materials. I originally tested this catapult with more rubber bands, but found that the arm snapped, so I had to decrease the rubber bands. I had to experiment a lot to find the right balance between power and strength.",
-            "image1": "http://projects.aaronbecker.tech/projects/minicatapult/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/minicatapult/image1.jpg",
             "date": "7/16/2016",
             "complexity": "40",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/minicatapult"
+            "page": "https://projects.aaronbecker.tech/projects/minicatapult"
         },
         "RaspberryPiTestServer": {
             "title": "Raspberry Pi Test Server",
             "description": "Another project that I worked on during my 7th grade summer was the Raspberry Pi Server project. Around this time, I was introduced to the world of SBC computers (Single-Board Computers). At the time, the Raspberry Pi was the best choice. It is a small, credit-card sized computer, running a distribution of Linux. I was immediately hooked. I set this one up to broadcast its own WiFi network which would automatically block ads, as well as act as a test server for any code (like this website) that I wanted to test. To this day, I still use it as my development server, and all testing code for this website is either uploaded to it or the local server running on my computer. When I worked on this project, I learned many skills, including a lot of command-line knowledge and Python script knowledge, which I then applied to setting up the tools required to accomplish my goals with this project.",
-            "image1": "http://projects.aaronbecker.tech/projects/raspberrypiserver/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/raspberrypiserver/image1.jpg",
             "date": "7/15/2016",
             "complexity": "50",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/raspberrypiserver"
+            "page": "https://projects.aaronbecker.tech/projects/raspberrypiserver"
         },
         "MarbleLauncher": {
             "title": "Marble Launcher",
             "description": "During my 7th grade summer, I made another popsicle stick and rubber-band powered gun, this time one that shoots marbles. The most difficult part of this project was surprisingly the trigger mechanism, since I had to somehow change a small amount of rotation (pulling the trigger) to release the bands. I learned a lot about rotational and linear motion since I had to figure a way to turn one into the other.",
-            "image1": "http://projects.aaronbecker.tech/projects/marblelauncher/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/marblelauncher/image1.jpg",
             "date": "7/5/2016",
             "complexity": "35",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/marblelauncher"
+            "page": "https://projects.aaronbecker.tech/projects/marblelauncher"
         },
         "Cube": {
             "title": "Cube Radio",
             "description": "The Cube Radio was a project that was actually designed to help me with other projects. Made during winter of 2016, it basically acted as a remote trigger, where I could send it messages and it would respond by activating a power source for a more dangerous project, for instance. One thing that made it special was the radios that were used (XBees). They were extremely powerful radios that could send signals at about 0.5miles away. While making this, I learned how to work with acrylic (the box), ABS plastic (the hinges), and Atmega328p chips (the main chip controlling it).",
-            "image1": "http://projects.aaronbecker.tech/projects/cube/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/cube/image1.jpg",
             "date": "1/24/2016",
             "complexity": "45",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/cube"
+            "page": "https://projects.aaronbecker.tech/projects/cube"
         },
         "3dCube": {
             "fill": "fyuse",
@@ -382,87 +382,87 @@
             "complexity": "45",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/cube"
+            "page": "https://projects.aaronbecker.tech/projects/cube"
         },
         "MiniCrossbow": {
             "title": "Mini Crossbow",
             "description": "One day during the winter of 6th grade, I was watching some videos on YouTube with a friend when I saw this really cool project that someone had made. It was a small crossbow that shot matches. I was immediately intrigued, and I thought of several ways that I could make it better, such as using hair clips as the bow arms to increase the potential for potential energy. One skill that I learned from this project was teamwork. My friend and I had to work together to make the mini crossbow as good as it is. Teamwork was also used when we both contributed to the design. For example, I contributed the idea for the hair clips, and my friend contributed the idea for the dental floss wrappings and bowstring. Together, our ideas made this project much better then it could have been with only one person working on it.",
-            "image1": "http://projects.aaronbecker.tech/projects/minicrossbow/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/minicrossbow/image1.jpg",
             "date": "12/23/2015",
             "complexity": "40",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/minicrossbow"
+            "page": "https://projects.aaronbecker.tech/projects/minicrossbow"
         },
         "LiquidFueledEngine": {
             "title": "Baking Soda and Vinegar Rocket Engine",
             "description": "In the summer of 6th grade, I wanted to build a rocket engine. Since building a real rocket engine would be dangerous, I eventually decided to build one that used baking soda solution and vinegar. While making this, I learned the principles of a rocket engine, including ratios for fuels, all while using safe chemicals.",
-            "image1": "http://projects.aaronbecker.tech/projects/liquidfuelengine/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/liquidfuelengine/image1.jpg",
             "date": "7/20/2015",
             "complexity": "70",
             "completed": "80%",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/liquidfuelengine"
+            "page": "https://projects.aaronbecker.tech/projects/liquidfuelengine"
         },
         "Rocket": {
             "title": "Rocket",
             "description": "During my 6th grade summer, I attended a camp where we were able to build and design rockets. This rocket is one earlier design that I worked on. From this project, I learned a few things, including precision measurement, aerodynamic design, and style :)",
-            "image1": "http://projects.aaronbecker.tech/projects/rocket/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/rocket/image1.jpg",
             "date": "6/28/2015",
             "complexity": "20",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/rocket"
+            "page": "https://projects.aaronbecker.tech/projects/rocket"
         },
         "WristGun": {
             "title": "Wrist-Mounted Rubber-Band Gun",
             "description": "A small rubber-band powered paper-bullet shooter that is mounted on the wrist, and triggered with a finger. This project was finished in the summer of 6th grade, after many of the other, similar projects. I learned a lot when I made this project because making a rubber-band powered shooter compact was a design challenge for me. I had to use all my creativity and ingenuity to make it as small, yet as powerful as possible.",
-            "image1": "http://projects.aaronbecker.tech/projects/wristgun/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/wristgun/image1.jpg",
             "date": "7/15/2015",
             "complexity": "40",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/wristgun"
+            "page": "https://projects.aaronbecker.tech/projects/wristgun"
         },
         "DeskSniper": {
             "title": "Desktop Rubber-Band Gun",
             "description": "During the summer of 6th grade, I worked on this small rubber-band powered gun. I wanted to create a gun that was extremely accurate, and so I worked on the aim for a while. While making this, I learned about the importance of accuracy in projects, and how to use certain tools like drills, X-Acto knives, and hot glue guns to achieve that accuracy.",
-            "image1": "http://projects.aaronbecker.tech/projects/desksniper/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/desksniper/image1.jpg",
             "date": "6/25/2015",
             "complexity": "40",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/desksniper"
+            "page": "https://projects.aaronbecker.tech/projects/desksniper"
         },
         "CrackedApple1": {
             "title": "Cracked Apple MkI",
             "description": "The first custom-built PC that I ever made! Finished in the summer of 2015. Making this was a trial run for the later Cracked Apple MkII, and it taught me a lot of information on the details of assembling a computer, including assembling the CPU cooler, mounting the motherboard inside the case, and using fans to effectively channel air for cooling.",
-            "image1": "http://projects.aaronbecker.tech/projects/crackedapplemk1/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/crackedapplemk1/image1.jpg",
             "date": "6/9/2015",
             "complexity": "70",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/"
+            "page": "https://projects.aaronbecker.tech/projects/"
         },
         "EssayHelper": {
             "title":"Essay Helper Project",
             "description": "During the winter of my 6th grade year in school, we were practicing writing essays. I found it slightly irritating to have to write lots of essays, so I decided to write a small program to help me. It would basically take some information that I would enter, and match it to a template for the type of essay that I wanted to write. Sadly, I never ended finishing this project because I realized that grammar was quite difficult to work with in a template. However, I do think this project taught me some important lessons about coding in JavaScript, since at the time I didn't really know the best way to go about making a project such as this one. While making this project, I learned about using HTML and JS together, and using if/else statements.",
-            "image1": "http://projects.aaronbecker.tech/code/essayhelp/image1.png",
+            "image1": "https://projects.aaronbecker.tech/code/essayhelp/image1.png",
             "date": "12/15/2014",
             "complexity": "55",
             "completed": "50%",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/code/essayhelp/EssayHelper.html"
+            "page": "https://projects.aaronbecker.tech/code/essayhelp/EssayHelper.html"
         },
         "ZenithCatapult": {
             "title": "The Zenith",
             "description": "During the spring of my 5th grade year, we had an organized catapult contest. Everyone had to make a catapult at home and then bring it in to compete with the other students' catapults. My teacher, Ms. Ban, gave 3 \"recommended\" designs for us to follow. I looked at the designs, and I decided that I could make something better. I started with the catapult arms, since I knew that they needed to be strong. After making the arms, I needed to find an efficient use of rubber bands to allow the maximal velocity. After I made it, I tested it and it worked! As the day of the contest came, I shot my catapult- and ended up winning the contest, which surprised everybody! That contest in my 5th grade year is a memory that I will never forget. I even went back the next year with an improved design to show the next year's 5th graders my design. I ended up learning a lot, including a lot about the strength of popsicle sticks, rubber bands, and hot glue. In addition, I also learned about effective ways to transfer kinetic energy from elastic potential energy.",
-            "image1": "http://projects.aaronbecker.tech/projects/zenithcatapult/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/zenithcatapult/image1.jpg",
             "date": "4/26/2014",
             "complexity": "60",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/zenithcatapult"
+            "page": "https://projects.aaronbecker.tech/projects/zenithcatapult"
         },
         "TV-B-Gone": {
             "fill": "fyuse",
@@ -475,58 +475,58 @@
             "complexity": "30",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/tv-b-gone"
+            "page": "https://projects.aaronbecker.tech/projects/tv-b-gone"
         },
         "AutomatedDice": {
             "title": "Automated Dice",
             "description": "During the summer of 4th grade, I got this die as a kit. After opening it, I decided to try to build it. At the time, this was a real challenge for me, since my soldering skills were still rather limited. I worked really hard, and went carefully, and it did end up working. I learned a lot about soldering from this project, and I feel that it really marked the turning point where I was able to start soldering with a little more confidence, and take on more complex projects.",
-            "image1": "http://projects.aaronbecker.tech/projects/diecube/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/diecube/image1.jpg",
             "date": "6/12/2013",
             "complexity": "35",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/diecube"
+            "page": "https://projects.aaronbecker.tech/projects/diecube"
         },
         "Simon": {
             "title": "Simon Minigame",
             "description": "This Simon game is a classic memory game. Made during spring break of my 4th grade year, this project represents one of the first times that I ever soldered something together. Starting from a kit, I soldered all the pieces on. The skill of soldering, as has been mentioned, is one that I use a lot in most of my other projects and an essential skill to the home maker.",
-            "image1": "http://projects.aaronbecker.tech/projects/simon/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/simon/image1.jpg",
             "date": "4/5/2013",
             "complexity": "40",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/simon"
+            "page": "https://projects.aaronbecker.tech/projects/simon"
         },
         "GoKart": {
             "title": "Go Kart",
             "description": "During the summer of 3rd grade, I went to a summer camp. Unlike most other summer camps, at this one, me (and a few friends) built wooden push go-karts! After a week spent building our go-karts, we took them home. When I got home, I pushed mine around a bit and realized something was missing: lights! I spent several weeks working on a basic system that took the voltage from a 9V battery/resistor and a switch on the 'dash', and wired it to simple LED lights, and it worked! My go-kart now had lights. I learned one important skill from this project, which was the basics of working with wood. I had to figure out how to drill holes in the car for the lights, as well as cutting the actual car out of a sheet of wood. The skill of working with wood is one that I use quite often on many other projects today, and one that I will use for future projects.",
-            "image1": "http://projects.aaronbecker.tech/projects/gokart/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/gokart/image1.jpg",
             "date": "6/23/2012",
             "complexity": "35",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/gokart"
+            "page": "https://projects.aaronbecker.tech/projects/gokart"
         },
         "SnapCar": {
             "title": "SnapCircuits Car",
             "description": "A RC car that I created the controlling circuit for. When I was about 7, I loved SnapCircuits, and after experimenting with this car, I eventually made it work. I learned a lot about circuits in the process, since the driving circuitry had to be created by hand (with the help of the instruction manual).",
-            "image1": "http://projects.aaronbecker.tech/projects/snapcar/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/snapcar/image1.jpg",
             "date": "12/8/2010",
             "complexity": "40",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/snapcar"
+            "page": "https://projects.aaronbecker.tech/projects/snapcar"
         },
         "FirstCircuit": {
             "title": "First Circuit Drawing",
             "fill": "rotateImages90",
             "description": "This project is the one that started it all. This drawing is the first recorded instance of me working on a 'project'. This was drawn when I was only 5 years old, in preschool, and it shows how my interest in electronics was piqued at a young age.",
-            "image1": "http://projects.aaronbecker.tech/projects/firstcircuit/image1.jpg",
+            "image1": "https://projects.aaronbecker.tech/projects/firstcircuit/image1.jpg",
             "date": "12/25/08",
             "complexity": "15",
             "completed": "yes",
             "includeAge": true,
-            "page": "http://projects.aaronbecker.tech/projects/firstcircuit"
+            "page": "https://projects.aaronbecker.tech/projects/firstcircuit"
         }
     }
 }

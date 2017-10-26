@@ -289,7 +289,7 @@
                                             }
                                         },errorRedirectTimeout);
                                     }
-                                    var ret = ProceduralJSON.generate(___projects.project_template[template],___projects.projects[keys[i]],___projects.functions);
+                                    var ret = ProceduralJSON.generate(___projects.project_template[template],___projects.projects[keys[i]],___projects.functions); //THE MAGIC LINE!!!
                                     //console.log("tem: "+template+", temJSON: "+JSON.stringify(___projects.project_template[template])+", proj: "+JSON.stringify(___projects.projects[keys[i]])+", ret: "+JSON.stringify(ret));
                                     if (typeof ret !== 'undefined' && ret != "error") {
                                         var title = ___projects.projects[keys[i]].title || "(no name specified)";
