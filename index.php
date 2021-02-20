@@ -197,8 +197,8 @@
         <p style="font-size: xx-small; color: #f2f2f2; text-align: center;" onclick="alert('Secret found!');">Click here!</p>
     </body>
     <script>
-    var version = 29;  
-    console.typeable("ifoundit","console.log(\"<--- aaronbecker.tech v\"+version+\" ---> %cIf you can see this, type in 'ifoundit' in the console and see what happens :)\",'color:#ffffff; background:#ffffff');","console.log(\"You found it! (More will be added later)\");")
+    var version = 30;  
+    console.typeable("ifoundit","console.log(\"<--- aaronbecker.tech v\"+version+\" LTS ---> %cIf you can see this, type in 'ifoundit' in the console and see what happens :)\",'color:#ffffff; background:#ffffff');","console.log(\"You found it! (More will be added later)\");")
         var ___DEVELOPMENT = (window.location.href.indexOf("aaronbecker.tech")>-1)?false:true;
         console.info("Developer mode is: "+((___DEVELOPMENT)?"enabled":"disabled"));
         setInterval(function(){
@@ -208,152 +208,139 @@
                     console.info("Overriding developer mode; URL detected");
                     ___DEVELOPMENT = chk;
                 }
-            } catch(e) {console.warn("Error overriding developer mode; disabling"); try{___DEVELOPMENT = false}catch(e){window.___DEVELOPMENT = false}}
+            } catch(e) {
+                console.warn("Error overriding developer mode; disabling");
+                try{
+                    ___DEVELOPMENT = false;
+                }catch(e){
+                    window.___DEVELOPMENT = false;
+                }
+            }
         },500);
-        /*setTimeout(function(){
-            if (!___DEVELOPMENT){alert("Please note that this is in development. If there is any problems, I'm working on it :) \n\nIf you'd like to check out the changelog, go to aaronbecker.tech/changelog.txt to see it"); window.scrollTo(0, 0);}
-        },500);*/
-        console.info("Changelog available at aaronbecker.tech/changelog.txt");
-        var required = [[typeof helpLib,"HelpLib"],[typeof shinejs,"ShineJS"],[typeof window.keypress,"WindowKeypress"],[typeof ProceduralJSON,"ProceduralJSON"],[typeof ___offsetanchor,"OffsetAnchors"],[typeof window.pannellum,"Pannellum"],[typeof Switchery,"Switchery"],[typeof fyuse,"Fyuse"],[typeof ViewSwitch,"3dViewSwitch"],[typeof TypeSwitch,"3dTypeSwitch"]];
 
-        //INITIALIZATION ERROR HANDLER - By Aaron Becker
-        var errorRedirectTimeout = 100;
-        if (___DEVELOPMENT) {errorRedirectTimeout = 1000000;}
+        console.info("Changelog available at aaronbecker.tech/changelog.txt");
+        //Required libraries
+        var required = [
+            [typeof helpLib,"HelpLib"],
+            [typeof shinejs,"ShineJS"],
+            [typeof window.keypress,"WindowKeypress"],
+            [typeof ProceduralJSON,"ProceduralJSON"],
+            [typeof ___offsetanchor,"OffsetAnchors"],
+            [typeof window.pannellum,"Pannellum"],
+            [typeof Switchery,"Switchery"],
+            [typeof fyuse,"Fyuse"],
+            [typeof ViewSwitch,"3dViewSwitch"],
+            [typeof TypeSwitch,"3dTypeSwitch"]
+        ];
+
+        //Start by loading libs
         console.log("%cInitialization started\n",'color:#0000ff');
         console.log("%cScript initialization started",'color:#0000ff');
-        var errored = false; var e = ""; try { for (var i=0; i<required.length; i++) { //yer boi's built-in error handler
-            if (required[i][0] === 'undefined') {
-                if (errored == false) {
-                    console.log("%cERROR: Failed to load script "+required[i][1]+".",'color:#ff0000');
-                    errored = true;
+        var errored = false; var e = "";
+        try {
+            for (var i=0; i<required.length; i++) { //yer boi's built-in error handler
+                if (required[i][0] === 'undefined') {
+                    if (errored == false) {
+                        console.log("%cERROR: Failed to load script "+required[i][1]+".",'color:#ff0000');
+                        errored = true;
+                    }
+                    if (e != "") {
+                        e+=", ";
+                    }
+                    e+="no"+required[i][1];
+                } else {
+                    console.log("Loaded script "+required[i][1]+" %csuccessfully.",'color:#009933');
                 }
-                if (e != "") {
-                    e+=", ";
-                }
-                e+="no"+required[i][1];
-            } else {
-                console.log("Loaded script "+required[i][1]+" %csuccessfully.",'color:#009933');
             }
-        }
-        if (errored) {
-            setTimeout(function(){
-                window.location.href = "error.html?e="+e;
-            },errorRedirectTimeout); //change timeout!! -done
-            console.log("%cScript initialization finished with %cfailure, %credirecting",'color:#0000ff','color:#ff0000','color:#0000ff');
-        } else {
-            console.log("%cScript initialization finished %csuccessfully, %cno redirect",'color:#0000ff','color:#009933','color:#0000ff');
+            if (errored) console.log("%cScript initialization finished with %cfailure",'color:#0000ff','color:#ff0000');
 
+            console.log("%cScript initialization finished %csuccessfully",'color:#0000ff','color:#009933');
+
+            //Now load projects
             console.log("%cProject initialization started",'color:#0000ff');
             console.log("%cRequesting json script projects.json",'color:#0000ff');
             var ___projects = null;
             loadScript("projects.json",function(response,status) {
-                try {
-                    if (status != 200) {
-                        errored = true;
-                        console.log("Requesting JSON script status: %cfailure %c("+status+")",'color:#ff0000','color:#000000');
-                        setTimeout(function(){
-                            window.location.href = "error.html?e=getJSONScriptFailure";
-                        },errorRedirectTimeout);
+            try {
+                if (status != 200) {
+                    errored = true;
+                    console.log("Requesting JSON script status: %cfailure %c("+status+")",'color:#ff0000','color:#000000');
+                } else {
+                    if (response == null && status == 200) {
+                        console.log("Requesting JSON script status: %cstatus 200, but returned null %c("+status+"). This may happen a few times before full load.",'color:#ffcc00','color:#000000');
                     } else {
-                        if (response == null && status == 200) {
-                            console.log("Requesting JSON script status: %cstatus 200, but returned null %c("+status+"). This may happen a few times before full load.",'color:#ffcc00','color:#000000');
+                        console.log("Requesting JSON script status: %csuccess %c("+status+")",'color:#009933','color:#000000');
+                        ___projects = JSON.parse(response); //parse the response
+                        var keys = Object.keys(___projects.projects);
+                        if (typeof keys === 'undefined') {
+                            errored = true;
+                            console.log("%cFailure %cfetching projects from configuration file",'color:#0000ff','color:#000000');
                         } else {
-                            console.log("Requesting JSON script status: %csuccess %c("+status+")",'color:#009933','color:#000000');
-                            ___projects = JSON.parse(response); //parse the response
-                            var keys = Object.keys(___projects.projects);
-                            if (typeof keys === 'undefined') {
-                                errored = true;
-                                console.log("%cFailure %cfetching projects from configuration file",'color:#0000ff','color:#000000');
-                                setTimeout(function(){
-                                    window.location.href = "error.html?e=fetchProjectFromConfigFailure";
-                                },errorRedirectTimeout);
-                            } else {
-                                console.log("%cRequesting json scripts finished",'color:#0000ff');
-                                console.log("%cProject initialization started",'color:#0000ff');
-                                for (var i=0; i<keys.length; i++) {
-                                    var template = "";
-                                    if (typeof ___projects.projects[keys[i]].fill === "undefined") {
-                                        //console.log("Project fill blank, defaulting");
-                                        template = "default";
-                                    } else {
-                                        if (typeof ___projects.project_template[___projects.projects[keys[i]].fill] === "undefined") {
-                                            errored = true;
-                                            console.error("Template requested doesn't exist (requested "+___projects.projects[keys[i]].fill+")");
-                                        } else {
-                                            template = ___projects.projects[keys[i]].fill;
-                                        }
-                                    }
-                                    if (typeof ___projects.functions === "undefined") {
+                            console.log("%cRequesting json scripts finished",'color:#0000ff');
+                            console.log("%cProject initialization started",'color:#0000ff');
+                            for (var i=0; i<keys.length; i++) {
+                                var template = "";
+                                if (typeof ___projects.projects[keys[i]].fill === "undefined") {
+                                    //console.log("Project fill blank, defaulting");
+                                    template = "default";
+                                } else {
+                                    if (typeof ___projects.project_template[___projects.projects[keys[i]].fill] === "undefined") {
                                         errored = true;
-                                        console.error("Functions in JSON not defined");
-                                        setTimeout(function(){
-                                            try{
-                                                window.location.href = "error.html?e=JSONfunctionsNotDefined";
-                                            } catch(e) {
-                                                window.location.href = "error.html?e=JSONfunctionsNotDefined";
-                                            }
-                                        },errorRedirectTimeout);
-                                    }
-                                    var ret = ProceduralJSON.generate(___projects.project_template[template],___projects.projects[keys[i]],___projects.functions); //THE MAGIC LINE!!!
-                                    //console.log("tem: "+template+", temJSON: "+JSON.stringify(___projects.project_template[template])+", proj: "+JSON.stringify(___projects.projects[keys[i]])+", ret: "+JSON.stringify(ret));
-                                    if (typeof ret !== 'undefined' && ret != "error") {
-                                        var title = ___projects.projects[keys[i]].title || "(no name specified)";
-                                        console.log("Loaded project '"+title+"' %csuccessfully%c, template = "+template,'color:#009933','color:#000000');
-                                        ID("mp").innerHTML = ID("mp").innerHTML + ret;
+                                        console.error("Template requested doesn't exist (requested "+___projects.projects[keys[i]].fill+")");
                                     } else {
-                                        errored = true;
-                                        if (typeof ___projects.projects[keys[i]].title != "undefined") {
-                                            console.log("Loading project '"+(___projects.projects[keys[i]].title || "(no name specified)")+"' %cfailed",'color:#ff0000');
-                                        } else {
-                                            console.log("Loading project '"+(keys[i] || "(no name specified)")+"' %cfailed (title property not defined, taken from key)",'color:#ff0000');
-                                        }
-                                        setTimeout(function(){
-                                            try{
-                                                var title = ___projects.projects[keys[i-1]].title || "(no name specified)";
-                                                window.location.href = "error.html?e=projectLoadingFailure(p: "+title+")";
-                                            } catch(e) {
-                                                window.location.href = "error.html?e=projectLoadingFailure(p: "+keys[i-1]+")";
-                                            }
-                                        },errorRedirectTimeout);
+                                        template = ___projects.projects[keys[i]].fill;
                                     }
                                 }
-                                //sortProjects(); //sort projects into reverse chronological order for better readability
-                                var tries = 50;
-
-                                var origtries = tries;
-                                var fiximgsinterval = setInterval(function(){
-                                    var successful = ProceduralJSON.callback(___projects.log_warnings);
-                                    if (successful) {
-                                        console.log("Resizing project images was %csuccessful",'color:#009933');
-                                        clearInterval(fiximgsinterval);
+                                if (typeof ___projects.functions === "undefined") {
+                                    errored = true;
+                                    console.error("Functions in JSON not defined");
+                                }
+                                var ret = ProceduralJSON.generate(___projects.project_template[template],___projects.projects[keys[i]],___projects.functions); //THE MAGIC LINE!!!
+                                //console.log("tem: "+template+", temJSON: "+JSON.stringify(___projects.project_template[template])+", proj: "+JSON.stringify(___projects.projects[keys[i]])+", ret: "+JSON.stringify(ret));
+                                if (typeof ret !== 'undefined' && ret != "error") {
+                                    var title = ___projects.projects[keys[i]].title || "(no name specified)";
+                                    console.log("Loaded project '"+title+"' %csuccessfully%c, template = "+template,'color:#009933','color:#000000');
+                                    ID("mp").innerHTML = ID("mp").innerHTML + ret;
+                                } else {
+                                    errored = true;
+                                    if (typeof ___projects.projects[keys[i]].title != "undefined") {
+                                        console.log("Loading project '"+(___projects.projects[keys[i]].title || "(no name specified)")+"' %cfailed",'color:#ff0000');
                                     } else {
-                                        console.log("Resizing project images %cfailed, %ctry "+(origtries+1-tries)+"/"+origtries,'color:#ff0000','color:#000000');
-                                        tries--;
+                                        console.log("Loading project '"+(keys[i] || "(no name specified)")+"' %cfailed (title property not defined, taken from key)",'color:#ff0000');
                                     }
-                                    if (tries <= 0) {
-                                        console.error("Resizing project images failed after reaching max amount of tries");
-                                        //window.location.href = "error.html?e=resizeProjectImagesFailure";
-                                        clearInterval(fiximgsinterval);
-                                    }
-                                },2000);
+                                }
                             }
+                            //sortProjects(); //sort projects into reverse chronological order for better readability
+                            var tries = 50;
+
+                            var origtries = tries;
+                            var fiximgsinterval = setInterval(function(){
+                                var successful = ProceduralJSON.callback(___projects.log_warnings);
+                                if (successful) {
+                                    console.log("Resizing project images was %csuccessful",'color:#009933');
+                                    clearInterval(fiximgsinterval);
+                                } else {
+                                    console.log("Resizing project images %cfailed, %ctry "+(origtries+1-tries)+"/"+origtries,'color:#ff0000','color:#000000');
+                                    tries--;
+                                }
+                                if (tries <= 0) {
+                                    console.error("Resizing project images failed after reaching max amount of tries");
+                                    clearInterval(fiximgsinterval);
+                                }
+                            },2000);
                         }
                     }
-                } catch(e) {
-                    errored = true;
-                    console.error("ErrorHandlerCeption (inside JSON) e: "+e);
-                    setTimeout(function(){
-                        window.location.href = "error.html?e=errorHandlerCeption(error while handling error inside json) -- E: "+e+" -- LN: "+e.lineNumber;
-                    },errorRedirectTimeout);
                 }
-            },false,"application/json");
-        }
+            } catch(e) {
+                errored = true;
+                console.error("ErrorHandlerCeption (inside JSON) e: "+e);
+            }
+        },false,"application/json");
+        
+
         }  catch(e) {
             errored = true;
             console.error("ErrorHandlerCeption (outside JSON) e: "+e);
-            setTimeout(function(){
-                window.location.href = "error.html?e=errorHandlerCeption(error while handling error outside json) -- E: "+e+", -- LN: "+e.lineNumber;
-            },errorRedirectTimeout);
         }
 
 
