@@ -100,6 +100,7 @@
             <span>Welcome to my website! My name is Aaron Becker and I love to work on advanced projects in both individual and team settings. I'm inspired by many things, including programming, interesting web and hardware design projects, and academics. I'm currently a senior at Burlingame High School in California and plan on attending MIT next year as part of the Class of 2025.</span>
             <p>I've been making projects for much of my life, and I'm excited to present many of the projects that I have finished over several years on this website.</p>
             <p style="font-size: 1.5em !important;">Please check out my <a href="https://github.com/aaroexxt" target="_blank">GitHub</a> for more up-to-date information on my latest projects, and my <a href="https://www.linkedin.com/in/aaron-m-becker/" target="_blank">LinkedIn</a> for information on jobs or internships.</p>
+            <p>Finally, here is my <a href="resume.pdf">latest resume</a>.</p>
         </div>
         <br>
         <br>
